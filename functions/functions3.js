@@ -2,7 +2,7 @@
 // functions anonymous
 
 //parâmetros (parameters)
-/*const sum = function(number1,number2){
+const sum = function(number1,number2){
     console.log(number1 + number2)
 }
 
@@ -20,7 +20,7 @@ let number2 = 25
 
 
 console.log(`a soma é ${sum(number1, number2)}`)
-console.log(total)*/
+console.log(total)
 //#################################################################################
 
 
