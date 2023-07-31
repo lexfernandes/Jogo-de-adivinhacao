@@ -135,3 +135,141 @@ console.log(Number('9') + 5)
 let frase ='Eu quero viver o amor!'
 console.log(frase.includes('amor'))
 
+//Manipulando Arrays
+
+//Criar array com construtor
+
+let myArray = new Array('a','b','c')
+console.log(myArray)
+
+//Manipulando Arrays
+//contar elementos de um array
+console.log(['a','b','c'].length)
+
+/*
+    Manipulando Arrays
+
+    Transformar uma cadeia de caracteres em elementos de um array
+
+*/
+let word = 'manipulação'
+console.log(Array.from(word))
+
+/*
+    Manipulando Arrays
+
+*/
+
+let techs = ['html', 'css','js']
+
+// Adicionar um item no fim
+techs.push('nodejs')
+
+//adicionar no começo
+techs.unshift('sql')
+
+//remover do fim
+techs.pop()
+
+//remover do começo
+techs.shift()
+
+//pegar somente alguns elementos do array, slice trabalha com 2 parametros
+//1 parametro é para tirar e o segundo para iniciar.
+
+console.log(techs.slice(1, 3))
+
+//remover 1 ou mais items em qualquer posição do array
+techs.splice(1,2)
+
+//encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
+console.log(index)
+
+
+/*Expressoes e Operadores 
+
+    -Expressions
+    -Operators
+        binary
+        unary
+        ternary
+
+*/
+//expressions pode ou não terminar ;.
+let number = 1;
+
+//operators binary
+console.log(number + 1);
+
+//operators unary
+console.log(++number)
+
+//operators ternary
+console.log( false ? 'alo' : 'nada')
+
+/*
+    new
+    * left-hand-side expression
+    *criar um novo objeto
+
+*/
+let name = new String('alex')
+let age = new Number(23)
+name.sobreNome = 'Fernandes'
+
+console.log(name, age)
+
+/*
+
+    Operadores unários
+    typeof
+    delete
+
+*/
+
+const person = {
+    name:'Alex',
+    age: 25,
+}
+delete person.age
+console.log(person)
+
+/*
+    Operadores Aritiméticos
+
+*/
+
+//multiplicação
+console.log(3.2 * 5.5)
+
+//divisão
+console.log(12 / 2)
+
+//soma +
+console.log(10 + 2)
+
+//subtração
+console.log(12 - 6)
+
+//resto da divisão
+let remainder
+remainder = 11 % 10
+console.log(remainder)
+
+//incremento
+let increment
+increment = 10
+console.log(increment++)
+
+//obs: tem diferenca em icrementar antes e depois ex:
+console.log(++increment)
+
+//decremento
+let decrement
+decrement = 10
+decrement--
+console.log(decrement)
+
+//exponencial 3 elevado a 3
+console.log(3 ** 3)
