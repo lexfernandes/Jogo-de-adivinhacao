@@ -273,3 +273,54 @@ console.log(decrement)
 
 //exponencial 3 elevado a 3
 console.log(3 ** 3)
+
+// grouping operator
+
+let total = 2 + 3 * 5;
+console.log(total)
+
+// colocando os parenteses o calculo sera feito primeiro os ()
+let total2 = (2 + 3) * 5;
+console.log(total2)
+
+// operadores lógicos (logical operatos)
+
+// -2 valores booleanos, quando verificados,
+//resultára em verdadeiro ou falso.
+
+let pao = false
+let queijo = true
+//and (E) só será verdadeiro se as 2 condições forem verdadeiros
+console.log(pao && queijo)
+
+// or (OU) || apenas uma condição esteja verdadeira, sempre sera verdadeiro.
+
+console.log(pao || queijo)
+
+//NOT! //operador de negação ! troca o valor da variavel.
+console.log(!pao)
+
+// operadores de atribuição (assignment)
+let x
+
+// assignment
+x = 1
+
+// addition assignment
+// x = x + 2
+x +=2
+
+//subtraction assignment
+x-=1
+console.log(x)
+
+//multiplication assignment
+x *=2
+
+// division assignment
+ x /= 2
+
+ //remainder, exponetiation
+ x %= 2
+
+ x **=2
