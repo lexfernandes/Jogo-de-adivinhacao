@@ -1,24 +1,37 @@
-// operadores de atribuição (assignment)
-let x
+/*
+FALSY 
+Quando um valor e considerado false em contextos onde um booleano é obrigatorio
+(condicionais e loops)
+*/
 
-// assignment
-x = 1
+/*  False
+    0    
+    -0
+    ""
+    null
+    undefined
+    NaN
+    */
 
-// addition assignment
-// x = x + 2
-x +=2
+//ex:
+console.log( 0 ? 'verdadeiro' : 'falso')    
 
-//subtraction assignment
-x-=1
-console.log(x)
+/*
+    Truthy
+    Quando um valor é considerado true em contextos onde um
+    booleano é obrigatorio (condicionas e loops)
 
-//multiplication assignment
-x *=2
+    True
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
 
-// division assignment
- x /= 2
-
- //remainder, exponetiation
- x %= 2
-
- x **=2
+*/
+//ex:
+console.log( 'false' ? 'verdadeiro' : 'falso')   

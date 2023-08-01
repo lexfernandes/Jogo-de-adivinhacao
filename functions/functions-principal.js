@@ -324,3 +324,61 @@ x *=2
  x %= 2
 
  x **=2
+
+// condição então valor 1 se não valor 2
+// condition ? value1 : value2
+
+//exemplos
+//café da manhã top
+
+let pao = true
+let queijo = true
+
+const cafeTop = pao && queijo ? "Café top" : 'Café Péssimo'
+console.log(cafeTop)
+
+// outro exemplo
+const cafeTop = pao || queijo ? "Café top" : 'Café Péssimo'
+console.log(cafeTop)
+
+//Outro exemplo:
+const cafeTop = !pao || queijo ? "Café top" : 'Café Péssimo'
+console.log(cafeTop)
+
+/*
+FALSY 
+Quando um valor e considerado false em contextos onde um booleano é obrigatorio
+(condicionais e loops)
+*/
+
+/*  False
+    0    
+    -0
+    ""
+    null
+    undefined
+    NaN
+    */
+
+//ex:
+console.log( 0 ? 'verdadeiro' : 'falso')    
+
+/*
+    Truthy
+    Quando um valor é considerado true em contextos onde um
+    booleano é obrigatorio (condicionas e loops)
+
+    True
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+
+*/
+//ex:
+console.log( 'false' ? 'verdadeiro' : 'falso')   
