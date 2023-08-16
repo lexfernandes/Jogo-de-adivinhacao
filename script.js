@@ -9,7 +9,11 @@ let xAttempts = 1
 // Eventos
 btnTry.addEventListener("click", handleTryClick)
 btnReset.addEventListener("click", handleReset)
-
+document.addEventListener("keypress", function (e) {
+  if (e.key == "Enter") {
+    handleReset()
+  }
+})
 // funções Callback
 function handleTryClick(event) {
   event.preventDefault()
