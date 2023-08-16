@@ -1,11 +1,16 @@
 // variaveis
-const screen1 = document.querySelector(".screen1") 
+const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
-
+const btnTry = document.querySelector("#btnTry")
+const btnReset = document.querySelector("#btnReset")
 const randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
 
-// função callback
+// Eventos
+btnTry.addEventListener("click", handleTryClick)
+btnReset.addEventListener("click", handleReset)
+
+// funções Callback
 function handleTryClick(event) {
   event.preventDefault()
   // vai pegar  um número no input da pagina
@@ -21,14 +26,8 @@ function handleTryClick(event) {
   inputNumber.value = ""
   xAttempts++
 }
-// eventos
-const btnTry = document.querySelector("#btnTry")
-const btnReset = document.querySelector("#btnReset")
-
-btnTry.addEventListener("click", handleTryClick)
-
-btnReset.addEventListener("click", function () {
+function handleReset() {
   document.querySelector(".screen1").classList.remove("hide") // adiciona o hide na div screen1
   document.querySelector(".screen2").classList.add("hide") // remove o hide na div screen2
   xAttempts = 1
-})
+}
