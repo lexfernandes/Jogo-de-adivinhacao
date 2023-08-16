@@ -17,7 +17,6 @@ function handleTryClick(event) {
   inputNumber.value = ""
   xAttempts++
 }
-
 // eventos
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
