@@ -24,9 +24,12 @@ function handleTryClick(event) {
   if (Number(inputNumber.value) == randomNumber) {
     screen1.classList.add("hide") // adiciona o hide na div screen1
     screen2.classList.remove("hide") // remove o hide na div screen2
+    // adiciona o texto na segunda tela com número de tentativas
     screen2.querySelector("h2").innerText = `Você adivinhou o número em ${xAttempts} tentativas`
   }
+  // esvazia o imput para vazio
   inputNumber.value = ""
+  // contador de tentativas para mostrar na segunda tela.
   xAttempts++
 }
 function handleReset() {
