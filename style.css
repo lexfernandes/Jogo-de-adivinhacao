@@ -29,7 +29,7 @@ button {
 button:hover {
   background-color: #4040c4;
 }
-.hide {
+.hide { /*MODAL*/
   display: none;
 }
 main {
